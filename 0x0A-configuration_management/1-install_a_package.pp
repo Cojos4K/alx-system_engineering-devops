@@ -1,5 +1,5 @@
 #!/usr/bin/pup
-# install 'flask'
+# we are installing flash version (2.1.0)
 
 package { 'flask':
   ensure   => '2.1.0',
