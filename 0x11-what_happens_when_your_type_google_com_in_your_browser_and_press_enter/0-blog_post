@@ -1,0 +1,29 @@
+What Happens When You Type https://www.google.com and Press Enter?
+
+When you type "https://www.google.com" into your browser's address bar and hit Enter, a complex sequence of events is triggered behind the scenes, orchestrating the seamless connection to the Google website. Let's break down the journey into key components:
+
+1. DNS Request:
+Your browser initiates a Domain Name System (DNS) request to translate the human-readable "www.google.com" into an IP address. This request is sent to a DNS server, which responds with the corresponding IP address (like 172.217.7.206 for Google).
+
+2. TCP/IP:
+Once armed with the IP address, your browser establishes a Transmission Control Protocol (TCP) connection to the server at that IP address. The Internet Protocol (IP) handles routing the data packets to the correct destination.
+
+3. Firewall:
+Before the data reaches the destination server, it may need to pass through a firewall, a security barrier that monitors and controls incoming and outgoing network traffic. Firewalls help protect against unauthorized access and potential threats.
+
+4. HTTPS/SSL:
+In the case of Google, the connection is secured through HTTPS (Hypertext Transfer Protocol Secure), which is an extension of HTTP with added security. SSL (Secure Sockets Layer) or its successor, TLS (Transport Layer Security), encrypts the data exchanged between your browser and the server, ensuring privacy and preventing eavesdropping.
+
+5. Load-Balancer:
+Google serves millions of requests every second. A load balancer distributes incoming traffic across multiple servers to ensure efficient utilization of resources and prevent any single server from being overwhelmed. This enhances the website's availability and responsiveness.
+
+6. Web Server:
+The request arrives at one of Google's web servers, which hosts the website's static content like HTML, CSS, and JavaScript files. These servers handle the initial processing and deliver the basic structure of the webpage to your browser.
+
+7. Application Server:
+For dynamic content or interactions, the web server may communicate with an application server. This server executes more complex tasks, processing requests, interacting with databases, and generating dynamic content tailored to the user.
+
+8. Database:
+If the webpage requires data from a database, the application server communicates with it to retrieve the necessary information. This could include search results, user profiles, or any other dynamic content.
+
+In a nutshell, typing "https://www.google.com" initiates a cascading series of interactions involving DNS resolution, TCP/IP connections, security measures like firewalls and HTTPS/SSL, load balancing, and the collaboration of web servers, application servers, and databases. It's this intricate dance of technologies that ensures a seamless browsing experience for users worldwide.
